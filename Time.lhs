@@ -14,6 +14,6 @@
 -- 法定假期
 
 > isLawHoliday :: Day -> Bool
-> isLawHoliday day = [day] `isInfixOf` [(fromGregorian 2014 10 1)..(fromGregorian 2014 10 7)]
+> isLawHoliday day = day `elem` [(fromGregorian 2014 10 1)..(fromGregorian 2014 10 7)]
 
 -- 补充上班或加班
